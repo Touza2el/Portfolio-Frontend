@@ -4,16 +4,12 @@ import React, { useState, useEffect } from 'react';
 import './App.scss';
 
 function App() {
-  const [users, setUsers] = useState([
-    { id: 1, name: 'Hassan' },
-    { id: 2, name: 'Mustapha' },
-    { id: 3, name: 'Younes' },
-  ]);
+  const [users, setUsers] = useState([]);
   useEffect(() => {
     try {
       const fetchData = async () => {
         const { data } = await axios.get(
-          'https://jsonplaceholder.typicode.com/users'
+          'https://touzaelhassan.herokuapp.com/people'
         );
         setUsers(data);
       };
