@@ -20,7 +20,7 @@ export const signup = (name, email, password) => async (dispatch) => {
       },
     };
     const { data } = await axios.post(
-      '/api/users/signup',
+      'https://touzaelhassan.herokuapp.com/api/users/signup',
       { name, email, password },
       config
     );
@@ -57,7 +57,7 @@ export const signin = (email, password) => async (dispatch) => {
       },
     };
     const { data } = await axios.post(
-      '/api/users/signin',
+      'https://touzaelhassan.herokuapp.com/api/users/signin',
       { email, password },
       config
     );
