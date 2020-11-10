@@ -9,17 +9,19 @@ function App() {
     { id: 2, name: 'Mustapha' },
     { id: 3, name: 'Younes' },
   ]);
-  // useEffect(() => {
-  //   try {
-  //     const fetchData = async () => {
-  //       const { data } = await Axios.get();
-  //       setUsers(data);
-  //     };
-  //     fetchData();
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // });
+  useEffect(() => {
+    try {
+      const fetchData = async () => {
+        const { data } = await axios.get(
+          'https://jsonplaceholder.typicode.com/users'
+        );
+        setUsers(data);
+      };
+      fetchData();
+    } catch (error) {
+      console.log(error);
+    }
+  });
   return (
     <div className='app'>
       <h1>Web / Mobile Developers</h1>
