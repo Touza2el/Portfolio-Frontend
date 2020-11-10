@@ -8,7 +8,7 @@ const ContactScreen = () => {
           <div className='form-title'>
             <h1>get in touch</h1>
           </div>
-          <form>
+          <form action='POST' data-netlify='true'>
             <div className='form-info'>
               <div className='form-input'>
                 <label>Name : </label>
