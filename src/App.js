@@ -1,4 +1,4 @@
-import Axios from 'axios';
+import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 
 import './App.scss';
@@ -23,6 +23,7 @@ function App() {
   return (
     <div className='app'>
       <h1>Web / Mobile Developers</h1>
+      <h2>users : </h2>
       <div>
         {users.map((user) => (
           <div key={user.id}>{user.name}</div>
