@@ -1,0 +1,47 @@
+// Variables
+$main-black:#3B3B4F;
+$main-gray: #5f6368;
+$main-blue:#1a73e8;
+$light-gray: #d0d0d5;
+
+// Start General Style
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #3B3B4F;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+.container {
+  margin: auto;
+  width: 75%;
+}
+
+// End General Style
