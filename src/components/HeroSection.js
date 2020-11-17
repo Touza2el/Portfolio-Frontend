@@ -23,7 +23,8 @@ const HeroSection = () => {
               <p>
                 I'm Front-End web developer, I build fast, modern and mobile
                 friendly websites and web applications using modern web
-                technologies : HTML, CSS, Javascript and React.
+                technologies : <br /> HTML, CSS, Javascript, React and
+                WordPress.
               </p>
             </div>
             <div className='hero-btn'>
