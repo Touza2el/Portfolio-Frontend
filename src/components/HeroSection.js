@@ -21,10 +21,9 @@ const HeroSection = () => {
             </div>
             <div className='hero-description'>
               <p>
-                I'm Front-End web developer, I build fast, modern and mobile
-                friendly websites and web applications using modern web
-                technologies : <br /> HTML, CSS, Javascript, React and
-                WordPress.
+                I'm Frontend developer, I build fast and mobile friendly
+                websites and web applications using modern web technologies:
+                HTML, CSS, Javascript, React and WordPress.
               </p>
             </div>
             <div className='hero-btn'>
