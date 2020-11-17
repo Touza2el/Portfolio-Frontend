@@ -26,7 +26,7 @@ export const data = {
       icon: 'fab fa-wordpress-simple',
       title: 'Wordpress Design',
       description:
-        ' Set up a WordPress website and setting configuration, using pre-made themes and plugins, design Wordpress pages.',
+        ' Set up a WordPress website and setting configuration, using pre-made themes and plugins.',
     },
     {
       id: 5,
