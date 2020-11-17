@@ -104,7 +104,7 @@ header {
 }
 
 .header-content {
-  padding: 18px 0;
+  padding: 25px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -206,62 +206,73 @@ header {
   justify-content: center;
   align-items: center;
   background-color: $main-black;
+}
 
-  .hero-section-content {
-    margin-bottom: 100px;
-    width: 45%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
+.hero-section-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .hero-icon {
-      cursor: pointer;
-      margin-bottom: 20px;
+.hero-section-text {
+  margin-bottom: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
-      a {
-        i {
-          font-size: 50px;
-          color: #ececec;
-        }
-      }
-    }
+  .hero-icon {
+    cursor: pointer;
+    margin-bottom: 20px;
 
-    .hero-title {
-      margin-bottom: 10px;
-      color: #f6f6f6;
-      font-size: 23px;
-      font-family: Tahoma, roboto;
-      font-size: 35px;
-    }
-
-    .hero-description {
-      p {
+    a {
+      i {
+        font-size: 50px;
         color: #ececec;
-        font-family: Tahoma;
-        font-size: 16px;
-        line-height: 1.4;
       }
     }
+  }
 
-    .hero-btn {
-      margin-top: 25px;
+  .hero-title {
+    margin-bottom: 10px;
+    color: #f6f6f6;
+    font-size: 23px;
+    font-family: Tahoma, roboto;
+    font-size: 35px;
+  }
 
-      a {
-        padding: 10px 20px;
-        color: #fff;
-        background-color: $main-blue;
-        border: none;
-        border-radius: 3px;
-        font-size: 14px;
-        text-decoration: none;
-        transition: background 0.2s ease-in-out;
+  .hero-description {
+    p {
+      color: #ececec;
+      font-family: Tahoma;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
 
-        &:hover {
-          background-color: #4651b8;
+  .hero-btn {
+    margin-top: 25px;
 
-        }
+    a {
+      padding: 10px 20px;
+      color: #fff;
+      background-color: $main-blue;
+      border: none;
+      border-radius: 3px;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #4651b8;
+
       }
     }
+  }
+}
+
+.hero-section-image {
+  img {
+    width: 100%;
   }
 }
 
