@@ -326,7 +326,8 @@ header {
 // Start Sign Up and and Sign In Screens
 
 .sign-screen {
-  min-height: 81.3vh;
+  min-height: 88.8vh;
+  background-color: $main-black;
 
   .container {
     height: 100%;
@@ -377,17 +378,18 @@ header {
           flex-direction: column;
 
           label {
-            color: #444;
             font-size: 15px;
+            color: $light-gray;
           }
 
           input {
             margin-top: 5px;
             padding: 9px;
             width: 350px;
-            border: 1px solid $light-gray;
+            color: #444;
+            border: 1px solid $light-blue;
             border-radius: 5px;
-            background-color: rgba(238, 236, 236, 0.5);
+            background-color: $light-blue;
           }
         }
 
@@ -396,7 +398,7 @@ header {
 
           input {
             color: #fff;
-            background-color: $main-black;
+            background-color: $main-blue;
             border: none;
             padding: 9px 30px;
             border-radius: 3px;
@@ -413,12 +415,12 @@ header {
         margin-bottom: 50px;
 
         p {
-          color: #666;
+          color: $light-blue;
         }
 
         a {
           margin-left: 5px;
-          color: $main-black;
+          color: $main-blue;
         }
       }
     }
@@ -427,31 +429,11 @@ header {
 
 // End Sign Up and Sign In Screens
 
-
-// Start Store Screen
-.store-screen {
-  min-height: 81.3vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-// End Store Screen
-
-// Start Blog Screen
-.blog-screen {
-  min-height: 81.3vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-// End Blog Screen
-
 // Start Contact Screen
 
 .contact-screen {
-  min-height: 81.3vh;
+  min-height: 88.6vh;
+  background-color: $main-black;
 
   .container {
     height: 100%;
@@ -459,13 +441,13 @@ header {
     justify-content: center;
 
     .contact-screen-content {
-      margin-top: 50px;
+      margin-top: 90px;
       width: 100%;
 
       .form-title {
         h1 {
           margin-bottom: 20px;
-          color: $main-black;
+          color: $light-gray;
           text-decoration: underline;
           text-align: center;
         }
@@ -486,7 +468,7 @@ header {
 
             label {
               margin-bottom: 5px;
-              color: #444;
+              color: $light-gray;
             }
 
             input {
@@ -494,7 +476,8 @@ header {
               width: 350px;
               border: 1px solid $light-gray;
               border-radius: 5px;
-              background-color: rgba(238, 236, 236, 0.5);
+              background-color: $light-blue;
+              ;
             }
           }
         }
@@ -511,8 +494,8 @@ header {
             width: 350px;
             height: 200px;
             color: #444;
-            background-color: rgba(238, 236, 236, 0.5);
-            border: 1px solid $light-gray;
+            background-color: $light-blue;
+            border: 1px solid $light-blue;
             border-radius: 5px;
             outline: none;
           }
@@ -523,14 +506,14 @@ header {
             input {
               width: 350px;
               color: #fff;
-              background-color: $main-black;
+              background-color: $main-blue;
               border: none;
               padding: 9px 30px;
               border-radius: 3px;
               cursor: pointer;
 
               &:hover {
-                background-color: #242431;
+                background-color: #4f5bc9;
               }
             }
           }
@@ -547,6 +530,7 @@ header {
 footer {
   color: $light-gray;
   background-color: $main-black;
+  border-top: 1px solid rgba(246, 249, 252, 0.2);
 }
 
 .footer-content {
