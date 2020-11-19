@@ -3,6 +3,7 @@
 $main-black:#011A31;
 $main-gray: #5f6368;
 $main-blue:#626EE3;
+$light-blue:#F6F9FC;
 $light-gray: #d0d0d5;
 $main-purple: #F44292;
 
@@ -282,18 +283,23 @@ header {
 
 .services-section {
   padding: 100px 0;
+  background-color: $light-blue;
 }
 
 .services-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 35px;
+  gap: 40px;
 }
 
 .service-item {
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid #eee;
+  border-top: 5px solid #164270;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .service-icon {
@@ -539,8 +545,8 @@ header {
 
 // Start Footer Section
 footer {
-  color: $main-black;
-  background-color: $light-gray;
+  color: $light-gray;
+  background-color: $main-black;
 }
 
 .footer-content {

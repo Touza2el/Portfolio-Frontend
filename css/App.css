@@ -216,18 +216,23 @@ header {
 
 .services-section {
   padding: 100px 0;
+  background-color: #F6F9FC;
 }
 
 .services-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 35px;
+  gap: 40px;
 }
 
 .service-item {
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid #eee;
+  border-top: 5px solid #164270;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .service-icon i {
@@ -414,8 +419,8 @@ header {
 }
 
 footer {
-  color: #011A31;
-  background-color: #d0d0d5;
+  color: #d0d0d5;
+  background-color: #011A31;
 }
 
 .footer-content {
