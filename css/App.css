@@ -287,6 +287,9 @@ header {
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    padding-top: 40px;
+  }
   .hero-section .container {
     width: 90%;
   }
