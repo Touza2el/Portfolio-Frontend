@@ -8,8 +8,7 @@ const ContactScreen = () => {
           <div className='form-title'>
             <h1>get in touch</h1>
           </div>
-          <form name='contact' action='/contact' method='POST'>
-            <input type='hidden' name='form-name' value='contact' />
+          <form>
             <div className='form-info'>
               <div className='form-input'>
                 <label>Name : </label>
@@ -35,6 +34,7 @@ const ContactScreen = () => {
                 id=''
                 cols='30'
                 rows='10'
+                readOnly
               ></textarea>
               <div className='form-btn'>
                 <input type='submit' value='SEND' />

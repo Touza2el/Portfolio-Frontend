@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -30,6 +34,10 @@ button {
 
 input {
   outline: none;
+}
+
+i {
+  cursor: pointer;
 }
 
 .container {
@@ -86,7 +94,7 @@ header {
 
 .brand-name a {
   color: #d0d0d5;
-  font-size: 21px;
+  font-size: 18px;
   transition: color 0.3s ease-in-out;
 }
 .brand-name a:hover {
@@ -110,11 +118,11 @@ header {
   text-decoration: underline;
 }
 
-.log-systeme {
+.log-system {
   display: flex;
   align-items: center;
 }
-.log-systeme .new-user-btn a {
+.log-system .new-user-btn a {
   margin-left: 10px;
   padding: 8px 15px;
   color: #fff;
@@ -125,25 +133,25 @@ header {
   text-decoration: none;
   transition: background 0.2s ease-in-out;
 }
-.log-systeme .new-user-btn a:hover {
+.log-system .new-user-btn a:hover {
   background-color: #4651b8;
 }
-.log-systeme .login-user-btn {
+.log-system .login-user-btn {
   display: flex;
   align-items: center;
 }
-.log-systeme .login-user-btn .user {
+.log-system .login-user-btn .user {
   margin-right: 20px;
   display: flex;
 }
-.log-systeme .login-user-btn .user span {
+.log-system .login-user-btn .user span {
   margin-left: 5px;
   color: #d0d0d5;
 }
-.log-systeme .login-user-btn .user i {
+.log-system .login-user-btn .user i {
   color: #d0d0d5;
 }
-.log-systeme .login-user-btn button {
+.log-system .login-user-btn button {
   margin-right: 10px;
   padding: 6px 10px;
   background-color: #d0d0d5;
@@ -152,6 +160,71 @@ header {
   color: #011A31;
 }
 
+.mobile-menu {
+  display: none;
+}
+.mobile-menu i {
+  color: #d0d0d5;
+  font-size: 28px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+    border-bottom: 1px solid #d0d0d531;
+  }
+
+  .header-content {
+    padding: 15px;
+  }
+
+  .nav-links {
+    transform: translate(100%, 25.2%);
+    width: 100%;
+    position: absolute;
+    color: #011A31;
+    background-color: #d0d0d5;
+    right: 0;
+    top: 0;
+    transition: transform 0.7s ease-in-out;
+  }
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-links ul li {
+    margin: 0;
+    padding: 20px;
+  }
+  .nav-links ul li:hover {
+    background-color: #c5c5c5;
+  }
+  .nav-links ul li a {
+    display: block;
+    color: #011A31;
+  }
+  .nav-links ul li a:hover {
+    color: #011A31;
+    text-decoration: none;
+  }
+
+  .nav-links.open {
+    transition: transform 0.7s ease-in-out;
+    transform: translate(0, 25.2%);
+  }
+
+  .log-system {
+    display: none;
+  }
+
+  .login-user-btn {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
 .hero-section {
   min-height: 100vh;
   display: flex;
@@ -183,7 +256,6 @@ header {
 .hero-section-text .hero-title {
   margin-bottom: 10px;
   color: #f6f6f6;
-  font-size: 23px;
   font-family: Tahoma, roboto;
   font-size: 35px;
 }
@@ -214,6 +286,22 @@ header {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .hero-section-content {
+    flex-direction: column;
+  }
+
+  .hero-section-text {
+    margin: 50px 0;
+    text-align: center;
+  }
+  .hero-section-text .hero-title {
+    font-size: 23px;
+  }
+  .hero-section-text .hero-description p {
+    font-size: 15px;
+  }
+}
 .services-section {
   padding: 100px 0;
   background-color: #F6F9FC;
@@ -248,6 +336,16 @@ header {
 .service-description p {
   color: #666;
   line-height: 1.5;
+}
+
+.services-section {
+  padding: 70px 0;
+}
+
+.services-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
 }
 
 .sign-screen {
@@ -405,6 +503,23 @@ header {
 }
 .contact-screen .container .contact-screen-content form .form-message .form-btn input:hover {
   background-color: #4f5bc9;
+}
+
+.contact-screen-content {
+  margin: 0 !important;
+  padding: 50px;
+}
+
+form {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form .form-info {
+  margin: 0 !important;
+}
+form .form-message {
+  margin: 0;
 }
 
 footer {

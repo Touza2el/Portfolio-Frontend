@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 
@@ -8,6 +8,8 @@ const Header = () => {
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
 
+  const [isOpen, setIsOpen] = useState(false);
+
   const dispatch = useDispatch();
 
   const handleSignout = () => {
@@ -15,29 +17,29 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <header className='header'>
       <div className='container'>
         <div className='header-content'>
           <div className='brand-name'>
-            <Link to='/'>3Prod.</Link>
+            <Link to='/'>Touza2el</Link>
           </div>
-          <nav className='nav-links'>
+          <nav className={isOpen ? 'nav-links open' : 'nav-links'}>
             <ul>
-              <li>
+              <li onClick={() => setIsOpen(!isOpen)}>
                 <Link to='/'>home</Link>
               </li>
-              <li>
+              <li onClick={() => setIsOpen(!isOpen)}>
                 <Link to='/'>services</Link>
               </li>
-              <li>
+              <li onClick={() => setIsOpen(!isOpen)}>
                 <Link to='/'>blog</Link>
               </li>
-              <li>
+              <li onClick={() => setIsOpen(!isOpen)}>
                 <Link to='/contact'>contact</Link>
               </li>
             </ul>
           </nav>
-          <div className='log-systeme'>
+          <div className='log-system'>
             {userInfo ? (
               <div className='login-user-btn'>
                 <span className='user'>
@@ -51,6 +53,13 @@ const Header = () => {
                 <Link to='/signup'>Sign Up</Link>
                 <Link to='/signin'>Sign In</Link>
               </div>
+            )}
+          </div>
+          <div className='mobile-menu' onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? (
+              <i class='fas fa-times'></i>
+            ) : (
+              <i className='fas fa-bars'></i>
             )}
           </div>
         </div>
