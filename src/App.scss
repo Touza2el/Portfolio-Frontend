@@ -358,12 +358,20 @@ header {
 
 // Home Screen Media Queries
 @media(max-width:768px) {
+  .hero-section {
+    height: 80vh;
+
+    .container {
+      width: 90%;
+    }
+  }
+
   .hero-section-content {
     flex-direction: column;
   }
 
   .hero-section-text {
-    margin: 50px 0;
+    margin-bottom: 40px;
     text-align: center;
 
     .hero-title {
@@ -371,6 +379,8 @@ header {
     }
 
     .hero-description {
+      margin: 10px 0;
+
       p {
 
         font-size: 15px;
@@ -389,6 +399,7 @@ header {
 .services-section {
   padding: 100px 0;
   background-color: $light-blue;
+
 }
 
 .services-content {
@@ -427,14 +438,20 @@ header {
 }
 
 // Services Section Media Queries
-.services-section {
-  padding: 70px 0;
-}
+@media (max-width:768px) {
+  .services-section {
+    padding: 50px 0;
 
-.services-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
+    .container {
+      width: 90%;
+    }
+  }
+
+  .services-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
 
 // End Services Section

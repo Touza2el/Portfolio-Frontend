@@ -287,16 +287,26 @@ header {
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    height: 80vh;
+  }
+  .hero-section .container {
+    width: 90%;
+  }
+
   .hero-section-content {
     flex-direction: column;
   }
 
   .hero-section-text {
-    margin: 50px 0;
+    margin-bottom: 40px;
     text-align: center;
   }
   .hero-section-text .hero-title {
     font-size: 23px;
+  }
+  .hero-section-text .hero-description {
+    margin: 10px 0;
   }
   .hero-section-text .hero-description p {
     font-size: 15px;
@@ -338,16 +348,20 @@ header {
   line-height: 1.5;
 }
 
-.services-section {
-  padding: 70px 0;
-}
+@media (max-width: 768px) {
+  .services-section {
+    padding: 50px 0;
+  }
+  .services-section .container {
+    width: 90%;
+  }
 
-.services-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
+  .services-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
-
 .sign-screen {
   min-height: 88.8vh;
   background-color: #011A31;
