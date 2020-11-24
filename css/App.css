@@ -173,6 +173,9 @@ header {
     position: relative;
     border-bottom: 1px solid #d0d0d531;
   }
+  .header .container {
+    width: 90%;
+  }
 
   .header-content {
     padding: 15px;

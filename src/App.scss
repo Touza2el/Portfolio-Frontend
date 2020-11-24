@@ -217,6 +217,10 @@ header {
   .header {
     position: relative;
     border-bottom: 1px solid #d0d0d531;
+
+    .container {
+      width: 90%;
+    }
   }
 
   .header-content {
