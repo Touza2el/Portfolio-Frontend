@@ -221,10 +221,11 @@ header {
 
   .header-content {
     padding: 15px;
+    overflow: hidden;
+
   }
 
   .nav-links {
-
     transform: translate(100%, 25.2%);
     width: 100%;
     position: absolute;
@@ -261,6 +262,7 @@ header {
   }
 
   .nav-links.open {
+    visibility: visible;
     transition: transform 0.7s ease-in-out;
     transform: translate(0, 25.2%);
   }

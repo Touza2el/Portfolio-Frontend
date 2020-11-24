@@ -176,6 +176,7 @@ header {
 
   .header-content {
     padding: 15px;
+    overflow: hidden;
   }
 
   .nav-links {
@@ -209,6 +210,7 @@ header {
   }
 
   .nav-links.open {
+    visibility: visible;
     transition: transform 0.7s ease-in-out;
     transform: translate(0, 25.2%);
   }
