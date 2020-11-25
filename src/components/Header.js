@@ -31,8 +31,12 @@ const Header = () => {
               <li onClick={() => setIsOpen(!isOpen)}>
                 <Link to='/'>services</Link>
               </li>
-              <li onClick={() => setIsOpen(!isOpen)}>
-                <Link to='/'>blog</Link>
+              <li
+                onClick={() => {
+                  window.open('https://www.themernstack.com', '_blank');
+                }}
+              >
+                <span>blog</span>
               </li>
               <li onClick={() => setIsOpen(!isOpen)}>
                 <Link to='/contact'>contact</Link>

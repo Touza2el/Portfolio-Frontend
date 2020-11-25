@@ -117,6 +117,17 @@ header {
   color: #fff;
   text-decoration: underline;
 }
+.nav-links ul li span {
+  color: #d0d0d5;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+  font-size: 15px;
+  cursor: pointer;
+}
+.nav-links ul li span:hover {
+  color: #fff;
+  text-decoration: underline;
+}
 
 .log-system {
   display: flex;
