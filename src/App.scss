@@ -681,22 +681,24 @@ header {
 // Contact Screen Media Quries
 
 
-.contact-screen-content {
-  margin: 0 !important;
-  padding: 50px;
-}
-
-form {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  .form-info {
+@media (max-width:768px) {
+  .contact-screen-content {
     margin: 0 !important;
+    padding: 50px;
   }
 
-  .form-message {
-    margin: 0;
+  form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .form-info {
+      margin: 0 !important;
+    }
+
+    .form-message {
+      margin: 0;
+    }
   }
 }
 

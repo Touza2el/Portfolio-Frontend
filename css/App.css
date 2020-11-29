@@ -535,23 +535,24 @@ header {
   background-color: #4f5bc9;
 }
 
-.contact-screen-content {
-  margin: 0 !important;
-  padding: 50px;
-}
+@media (max-width: 768px) {
+  .contact-screen-content {
+    margin: 0 !important;
+    padding: 50px;
+  }
 
-form {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  form .form-info {
+    margin: 0 !important;
+  }
+  form .form-message {
+    margin: 0;
+  }
 }
-form .form-info {
-  margin: 0 !important;
-}
-form .form-message {
-  margin: 0;
-}
-
 footer {
   color: #d0d0d5;
   background-color: #011A31;
