@@ -274,6 +274,16 @@ header {
           }
         }
 
+        span {
+          color: $main-black;
+
+          &:hover {
+            color: $main-black;
+            text-decoration: none;
+          }
+
+        }
+
       }
     }
 
@@ -482,6 +492,11 @@ header {
 .sign-screen {
   min-height: 88.8vh;
   background-color: $main-black;
+  background-image: url("/images/hero-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
 
   .container {
     height: 100%;
@@ -588,6 +603,12 @@ header {
 .contact-screen {
   min-height: 88.6vh;
   background-color: $main-black;
+  background-image: url("/images/hero-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+
 
   .container {
     height: 100%;
@@ -697,7 +718,8 @@ header {
     }
 
     .form-message {
-      margin: 0;
+      margin-left: 0px !important;
+
     }
   }
 }

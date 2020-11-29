@@ -61,7 +61,7 @@ const Header = () => {
           </div>
           <div className='mobile-menu' onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? (
-              <i class='fas fa-times'></i>
+              <i className='fas fa-times'></i>
             ) : (
               <i className='fas fa-bars'></i>
             )}

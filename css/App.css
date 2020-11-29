@@ -222,6 +222,13 @@ header {
     color: #011A31;
     text-decoration: none;
   }
+  .nav-links ul li span {
+    color: #011A31;
+  }
+  .nav-links ul li span:hover {
+    color: #011A31;
+    text-decoration: none;
+  }
 
   .nav-links.open {
     visibility: visible;
@@ -381,6 +388,11 @@ header {
 .sign-screen {
   min-height: 88.8vh;
   background-color: #011A31;
+  background-image: url("/images/hero-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
 }
 .sign-screen .container {
   height: 100%;
@@ -463,6 +475,11 @@ header {
 .contact-screen {
   min-height: 88.6vh;
   background-color: #011A31;
+  background-image: url("/images/hero-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
 }
 .contact-screen .container {
   height: 100%;
@@ -550,7 +567,7 @@ header {
     margin: 0 !important;
   }
   form .form-message {
-    margin: 0;
+    margin-left: 0px !important;
   }
 }
 footer {
