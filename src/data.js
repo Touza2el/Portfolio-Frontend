@@ -43,4 +43,21 @@ export const data = {
         'Domain Name, web hosting and SSL configuration, and uploading website to the internet.',
     },
   ],
+  reasons: [
+    {
+      icon: 'far fa-clock',
+      title: 'always on time',
+      description: 'whenever there is a set time to get things done',
+    },
+    {
+      icon: 'far fa-check-circle',
+      title: 'hard working',
+      description: 'always putting a lot of effort and care into work',
+    },
+    {
+      icon: 'far fa-calendar-alt',
+      title: '24/7 availability',
+      description: 'I will always be there to help anytime, anywhere',
+    },
+  ],
 };

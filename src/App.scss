@@ -55,6 +55,29 @@ i {
   width: 75%;
 }
 
+@media (max-width:768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.section-title {
+  margin-bottom: 50px;
+  text-align: center;
+
+  h2 {
+    font-size: 32px;
+    color: #444;
+  }
+
+  span {
+    display: inline-block;
+    width: 60px;
+    height: 4px;
+    background-color: $main-blue;
+  }
+}
+
 // End General Style
 
 // Start Spinner
@@ -447,6 +470,7 @@ header {
   border-top: 5px solid #164270;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .service-icon {
@@ -486,6 +510,139 @@ header {
 }
 
 // End Services Section
+
+// Start Banner Section
+
+.banner-section {
+  height: 50vh;
+  background-attachment: fixed;
+  background-image: url("/images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: #4651b8;
+  background-blend-mode: multiply;
+}
+
+// Start Media Queries
+@media (max-width:768px) {
+  .banner-section {
+    height: 30vh;
+  }
+}
+
+// Start Banner Section
+
+// Start Projects Section
+
+
+.projects-section {
+  padding: 100px 0;
+}
+
+.projects-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #eee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+
+  &:hover .text {
+    bottom: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  .text {
+    padding: 10px 0;
+    position: absolute;
+    bottom: -42px;
+    color: #fff;
+    background-color: $main-blue;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+
+    p {
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+}
+
+// Start Media Queries
+
+@media (max-width:768px) {
+  .projects-section {
+    padding: 50px 0;
+  }
+
+  .projects-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+// End Projects Section
+
+// Start Why Section
+
+.why-section {
+  padding: 100px 0;
+}
+
+.why-section-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.reason-item {
+  padding: 20px;
+  border: 1px solid #eee;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.reason-icon {
+  i {
+    color: #164270;
+    font-size: 40px;
+  }
+}
+
+.reason-title {
+  margin: 20px 0 15px 0;
+}
+
+.reason-description {
+  color: #666;
+  line-height: 1.5;
+}
+
+// Media Queries
+@media (max-width:768px) {
+  .why-section {
+    padding: 50px 0;
+  }
+
+  .why-section-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+// End Why Section
 
 // Start Sign Up and and Sign In Screens
 

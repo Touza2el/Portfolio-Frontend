@@ -1,12 +1,14 @@
 import React from 'react';
 
 import { data } from '../data';
+import SectionTitle from './SectionTitle';
 
 const ServicesSection = () => {
   const { services } = data;
 
   return (
     <section className='services-section'>
+      <SectionTitle title='services' />
       <div className='container'>
         <div className='services-content'>
           {services.map((service) => (
