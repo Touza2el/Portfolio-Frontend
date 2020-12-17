@@ -632,7 +632,7 @@ header {
 // Start Subscribe Section
 
 .subscribe-section {
-  height: 20vh;
+  padding: 40px 0;
   background-color: $main-black;
   display: flex;
   justify-content: center;
@@ -679,6 +679,18 @@ header {
 
     p {
       margin-bottom: 20px;
+    }
+
+    .subscribe-form {
+      .input {
+        width: 200px;
+
+      }
+
+      .btn {
+        padding: 7px 15px;
+      }
+
     }
   }
 }
