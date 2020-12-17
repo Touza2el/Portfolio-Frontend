@@ -42,7 +42,7 @@ i {
 
 .container {
   margin: auto;
-  width: 75%;
+  width: 85%;
 }
 
 @media (max-width: 768px) {
@@ -559,6 +559,7 @@ header {
 .reason-item {
   padding: 20px;
   border: 1px solid #eee;
+  background-color: #fff;
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
@@ -597,7 +598,6 @@ header {
 }
 .contact-content .map {
   width: 45%;
-  overflow: hidden;
   border: 2px solid #eee;
 }
 .contact-content form {
@@ -607,6 +607,7 @@ header {
   justify-content: space-between;
 }
 .contact-content form input {
+  margin-bottom: 15px;
   width: 100%;
   padding: 10px;
   border: 1px solid #eee;
@@ -616,11 +617,13 @@ header {
   background-color: #626EE3;
   cursor: pointer;
   font-size: 16px;
+  margin-bottom: 0;
 }
 .contact-content form input.btn:hover {
   background-color: #5a66cf;
 }
 .contact-content form textarea {
+  margin-bottom: 15px;
   padding: 5px;
   width: 100%;
   border: 1px solid #eee;
@@ -633,7 +636,7 @@ header {
   }
   .contact-content .map {
     width: 100%;
-    overflow: hidden;
+    height: 300px;
     order: 1;
   }
   .contact-content form {

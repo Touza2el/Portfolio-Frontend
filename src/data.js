@@ -47,17 +47,33 @@ export const data = {
     {
       icon: 'far fa-clock',
       title: 'always on time',
-      description: 'whenever there is a set time to get things done',
+      description: 'Whenever there is a set time to get things done',
     },
     {
       icon: 'far fa-check-circle',
       title: 'hard working',
-      description: 'always putting a lot of effort and care into work',
+      description: 'Always putting a lot of effort and care into work',
     },
     {
       icon: 'far fa-calendar-alt',
       title: '24/7 availability',
       description: 'I will always be there to help anytime, anywhere',
+    },
+    {
+      icon: 'fas fa-code',
+      title: 'clean code',
+      description: 'Clear code, easy to understand and easy to change',
+    },
+    {
+      icon: 'fas fa-sitemap',
+      title: 'organized work',
+      description: 'ordering things so that they can be found easily',
+    },
+
+    {
+      icon: 'fas fa-briefcase',
+      title: 'Responsibilty',
+      description: 'I take full 100% responsibility for everything',
     },
   ],
 };
