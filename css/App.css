@@ -414,11 +414,42 @@ header {
   background-size: cover;
   background-color: #4651b8;
   background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  width: 70%;
+  text-align: center;
+}
+.banner-content q {
+  display: block;
+  color: #fff;
+  font-size: 25px;
+  font-style: italic;
+  font-family: "Bitter", roboto, serif;
+  letter-spacing: 2px;
+}
+.banner-content span {
+  margin: 20px 0;
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  background-color: coral;
+}
+.banner-content p {
+  color: #fff;
+  font-size: 25px;
 }
 
 @media (max-width: 768px) {
   .banner-section {
-    height: 30vh;
+    height: 50vh;
+  }
+
+  .banner-content {
+    width: 100%;
   }
 }
 .projects-section {
@@ -435,7 +466,7 @@ header {
   position: relative;
   overflow: hidden;
   border: 1px solid #eee;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 .project-item:hover .text {
   bottom: 0;
@@ -471,8 +502,52 @@ header {
     gap: 30px;
   }
 }
+.subscribe-section {
+  height: 20vh;
+  background-color: #011A31;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-content {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subscribe-content p {
+  text-transform: capitalize;
+  font-style: italic;
+}
+.subscribe-content .subscribe-form {
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe-content .subscribe-form .input {
+  width: 300px;
+  padding: 5px 10px;
+  border: none;
+}
+.subscribe-content .subscribe-form .btn {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #626EE3;
+  text-transform: uppercase;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .subscribe-content {
+    flex-direction: column;
+  }
+  .subscribe-content p {
+    margin-bottom: 20px;
+  }
+}
 .why-section {
   padding: 100px 0;
+  background-color: #F6F9FC;
 }
 
 .why-section-content {
@@ -510,6 +585,67 @@ header {
   .why-section-content {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+}
+.contact-section {
+  padding: 100px 0;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-content .map {
+  width: 45%;
+  overflow: hidden;
+  border: 2px solid #eee;
+}
+.contact-content form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-content form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eee;
+}
+.contact-content form input.btn {
+  color: #fff;
+  background-color: #626EE3;
+  cursor: pointer;
+  font-size: 16px;
+}
+.contact-content form input.btn:hover {
+  background-color: #5a66cf;
+}
+.contact-content form textarea {
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #eee;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+  .contact-content .map {
+    width: 100%;
+    overflow: hidden;
+    order: 1;
+  }
+  .contact-content form {
+    width: 100%;
+    order: 0;
+    margin-bottom: 30px;
+  }
+  .contact-content form input {
+    margin-bottom: 15px;
+  }
+  .contact-content form textarea {
+    margin-bottom: 15px;
   }
 }
 .sign-screen {

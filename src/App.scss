@@ -521,12 +521,46 @@ header {
   background-size: cover;
   background-color: #4651b8;
   background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  width: 70%;
+  text-align: center;
+
+  q {
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    font-style: italic;
+    font-family: 'Bitter', roboto, serif;
+    letter-spacing: 2px;
+  }
+
+  span {
+    margin: 20px 0;
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+    background-color: coral;
+  }
+
+  p {
+    color: #fff;
+    font-size: 25px;
+  }
 }
 
 // Start Media Queries
 @media (max-width:768px) {
   .banner-section {
-    height: 30vh;
+    height: 50vh;
+  }
+
+  .banner-content {
+    width: 100%;
   }
 }
 
@@ -549,7 +583,7 @@ header {
   position: relative;
   overflow: hidden;
   border: 1px solid #eee;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
 
   &:hover .text {
@@ -595,10 +629,67 @@ header {
 
 // End Projects Section
 
+// Start Subscribe Section
+
+.subscribe-section {
+  height: 20vh;
+  background-color: $main-black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-content {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    text-transform: capitalize;
+    font-style: italic;
+  }
+
+  .subscribe-form {
+    display: flex;
+    justify-content: space-between;
+
+
+    .input {
+      width: 300px;
+      padding: 5px 10px;
+      border: none;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      color: #fff;
+      background-color: $main-blue;
+      text-transform: uppercase;
+      border: none;
+    }
+  }
+}
+
+// Start Media Queries
+
+@media (max-width:768px) {
+  .subscribe-content {
+    flex-direction: column;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// End Subscribe Section 
+
 // Start Why Section
 
 .why-section {
   padding: 100px 0;
+  background-color: #F6F9FC;
 }
 
 .why-section-content {
@@ -643,6 +734,92 @@ header {
 }
 
 // End Why Section
+
+// Start Contact Section
+
+.contact-section {
+  padding: 100px 0;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+
+  .map {
+    width: 45%;
+    overflow: hidden;
+    border: 2px solid #eee;
+  }
+
+  form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #eee;
+    }
+
+    input.btn {
+      color: #fff;
+      background-color: $main-blue;
+      cursor: pointer;
+      font-size: 16px;
+
+      &:hover {
+        background-color: #5a66cf;
+      }
+    }
+
+    textarea {
+      padding: 5px;
+      width: 100%;
+      border: 1px solid #eee;
+      outline: none;
+    }
+  }
+
+}
+
+// Start Media Queries
+
+@media (max-width:768px) {
+  .contact-content {
+    flex-direction: column;
+
+    .map {
+      width: 100%;
+      overflow: hidden;
+      order: 1;
+    }
+
+    form {
+      width: 100%;
+      order: 0;
+      margin-bottom: 30px;
+
+      input {
+        margin-bottom: 15px;
+
+      }
+
+      textarea {
+        margin-bottom: 15px;
+
+      }
+    }
+
+  }
+
+
+
+}
+
+// End Contact Section
 
 // Start Sign Up and and Sign In Screens
 
